@@ -28,3 +28,12 @@ minikube -p minikube docker-env
 ## How to run
 
 As mentioned in the requirements, it is important the Docker and Minikube are working fine and has enough memory to launch the required pods before running the application. I assume that the user knows how to use these two tools in general. 
+
+The Docker image can be build locally by running the following command.
+```sh
+docker build -t house3sh/python-helloworld:1.0 .
+```
+The same image has been uploaded to the public repository in the Docker Hub as [python-helloworld](https://hub.docker.com/r/house3sh/python-helloworld). The image can be pulled to the local machine by running the given command. This is a public repository
+```sh
+docker pull house3sh/python-helloworld:1.0
+```
