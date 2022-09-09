@@ -78,7 +78,7 @@ helloworld-74857fd9b4-lqspt   1/1     Running   0          9m4s
 
 You can test the load-balanced request by opening the URL http://localhost:55000 on the normal browser window and in the incognito window simultaneously. You can see the different local IP addresses from the pod on both windows. A sample browser output can be seen in the screenshot.
 
-![Load Balanced Request](https://github.com/shylaharild/devops-challenges/tree/equal-experts/equal-experts/assets/loadbalanced-request.png)
+![Load Balanced Request](assets/loadbalanced-request.png)
 
 The command below will help you to clean up the service. This command will again refer to the YAML file for the kinds of service being run in the Minikube environment and then delete them accordingly,
 ```sh
