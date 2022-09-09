@@ -15,7 +15,15 @@ This is a simple "Hello, World!" application that is written in Python and uses 
 - Minikube (latest version)
 
 ## Prerequisite
-Docker and Minikube should be up and running. The Docker environment must be set to the Minikube.
+Docker and Minikube should be up and running. The Docker environment must be set to the Minikube. This can be configured by running the command below.
+
+```sh
+eval $(minikube docker-env)
+```
+or 
+```sh
+minikube -p minikube docker-env
+```
 
 ## How to run
 
