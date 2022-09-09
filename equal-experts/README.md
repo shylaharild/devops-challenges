@@ -33,6 +33,7 @@ The Docker image can be built locally by running the following command.
 ```sh
 docker build -t house3sh/python-helloworld:1.0 .
 ```
+
 The same image has been uploaded to the public repository in the Docker Hub as [python-helloworld](https://hub.docker.com/r/house3sh/python-helloworld). The image can be pulled to the local machine by running the given command. This is a public repository
 ```sh
 docker pull house3sh/python-helloworld:1.0
@@ -42,6 +43,7 @@ To create a simple deployment of this application with 4 replicas that are load 
 ```sh
 kubectl create -f helloworld.yaml
 ```
+
 The Kubectl must identify the required service & deployment from the YAML file and run the required services automatically into the Minikube environment. The following command will describe the services.
 ```sh
 kubectl get deployments,svc helloworld
@@ -62,6 +64,7 @@ The application can be scaled up and down by changing the replica count in the c
 ```sh
 kubectl scale deployment helloworld --replicas=<desired-count>
 ```
+
 To list the pods, use the below command. The output is also given for reference
 ```sh
 sri$ kubectl scale deployment helloworld --replicas=3
@@ -72,6 +75,7 @@ helloworld-74857fd9b4-69c6h   1/1     Running   0          44s
 helloworld-74857fd9b4-fs5dd   1/1     Running   0          8m35s
 helloworld-74857fd9b4-lqspt   1/1     Running   0          9m4s
 ```
+
 You can test the load-balanced request by opening the URL http://localhost:55000 on the normal browser window and in the incognito window simultaneously. You can see the different local IP addresses from the pod on both windows. A sample browser output can be seen in the screenshot.
 
 ![Load Balanced Request](https://github.com/shylaharild/devops-challenges/tree/equal-experts/equal-experts/assets/loadbalanced-request.png)
