@@ -4,9 +4,9 @@ import socket
 
 async def main(request):
     ipadd = socket.gethostbyname(socket.gethostname())
-    text = "Hello, World! " + "IP is : " + ipadd
-    print(f'request received: {request} - {ipadd}. response: "{text}"')
-    return web.Response(text=text)
+    hw = "Hello, World! " + "IP is : " + ipadd
+    print(f'request received: {request} - {ipadd}. response: "{hw}"')
+    return web.Response(text=hw)
 
 
 app = web.Application()
