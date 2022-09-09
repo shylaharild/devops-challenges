@@ -8,3 +8,9 @@ Write a simple hello world application in any one of these languages: Python, Ru
 ## Answer: Hello World Python Application
 
 This is a simple "Hello, World!" application that is written in Python and uses Docker as Container service.
+
+## Requirements
+- Python 3.9
+- Docker (latest version)
+- Minikube (latest version)
+
